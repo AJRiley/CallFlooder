@@ -4,10 +4,13 @@ from twilio.rest import Client
 
 
 # Twilio phone number goes here. Grab one at https://twilio.com/try-twilio
-# and use the E.164 format, for example: "+12025551234"
+# and use the E.164 format, for example: "+12025551234" 
+# for a UK phone it would be +44 remove the first 0. e.g 01344595572 would become +441344595572
 TWILIO_PHONE_NUMBER = ["YOUR TWILIO NUMBER"]
 
 # list of one or more phone numbers to dial, in "+19732644210" format
+# for UK mobile numbers add +44 and remove the first 0.  e.g 07123123123 would be +447123123123
+# this is the same principle for actual phone numbers (landline)
 DIAL_NUMBERS = ["YOUR/VICTIMS PHONE NUMBER"]
 
 # URL location of TwiML instructions for how to handle the phone call
